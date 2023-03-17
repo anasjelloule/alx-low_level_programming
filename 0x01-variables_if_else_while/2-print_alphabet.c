@@ -14,11 +14,11 @@ int main(void)
     srand(time(0));
     n = rand() - RAND_MAX / 2;
     /* your code goes there */
-    // Get the character to be written
+
     char ch[] = "abcdefghijklmnopqrstuvwxyz";
     for (int i = 0; i < sizeof(ch); i++)
     {
-        // Write the Character to stdout
+
         putchar(ch[i]);
     }
     return (0);

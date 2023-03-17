@@ -9,17 +9,11 @@
  */
 int main(void)
 {
-    int n;
-
-    srand(time(0));
-    n = rand() - RAND_MAX / 2;
-    /* your code goes there */
-
-    char ch[] = "abcdefghijklmnopqrstuvwxyz";
-    for (int i = 0; i < sizeof(ch); i++)
+    char a;
+    for (a = 'a'; a <= 'z'; a++)
     {
-
-        putchar(ch[i]);
+        putchar(a);
     }
+    putchar('\n');
     return (0);
 }

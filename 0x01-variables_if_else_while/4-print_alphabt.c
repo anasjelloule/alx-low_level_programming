@@ -1,9 +1,9 @@
 #include <stdio.h>
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
-/*
- *Main program
+/**
+ * main - entry point
+ *
+ * Return: alway returns 0
+ *
  */
 int main(void)
 {

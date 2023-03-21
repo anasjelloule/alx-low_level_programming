@@ -24,12 +24,30 @@ void print_times_table(int n)
                 }
                 else if (prod <= 9)
                 {
-                    putchar(',');
-                    putchar(' ');
-                    putchar(' ');
-                    putchar(' ');
+                    printf(",");
+                    printf(" ");
+                    printf(" ");
+                    printf(" ");
                     putchar('0' + prod);
                 }
                 else if (prod > 99)
                 {
-                    putchar(',');
+                    printf(",");
+                    printf(" ");
+                    putchar('0' + (prod / 100));
+                    putchar('0' + ((prod / 10) % 10));
+                    putchar('0' + (prod % 10));
+                }
+                else
+                {
+                    printf(",");
+                    printf(" ");
+                    printf(" ");
+                    putchar('0' + (prod / 10));
+                    putchar('0' + (prod % 10));
+                }
+            }
+            putchar('\n');
+        }
+    }
+}

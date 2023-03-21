@@ -1,7 +1,7 @@
 #include "main.h"
 #include <ctype.h>
 /**
- * _islower - Check if is lower case
+ * _isalpha - Check if is alphabetic
  * @c: character to compare
  * Return: Void
  */
@@ -14,5 +14,5 @@ return (1);
 for (a = 'A'; a <= 'Z'; a++)
 if (a == c)
 return (1);
-return isdigit(c);
+return (isdigit(c));
 }

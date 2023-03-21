@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * jack_bauer - jack_bauer
  *
@@ -11,14 +10,11 @@ int i, j;
 for (i = 0; i < 24; i++)
 for (j = 0; j < 60; j++)
 {
-if (i < 10)
-printf("0%d:", i);
-if (j < 10)
-printf("0%d", j);
-if (i >= 10)
-printf("%d:", i);
-if (j >= 10)
-printf("%d", j);
-printf("\n");
+_putchar(i / 10 + '0');
+_putchar(i % 10 + '0');
+_putchar(':');
+_putchar(j / 10 + '0');
+_putchar(j % 10 + '0');
+_putchar('\n');
 }
 }

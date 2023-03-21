@@ -15,7 +15,8 @@ for (i = a; i <= 98; i++)
 printf("%d", i);
 if (i < 98)
 {printf(",");
-printf(" ");}
+printf(" ");
+}
 }
 else
 for (i = a; i >= 98; i--)

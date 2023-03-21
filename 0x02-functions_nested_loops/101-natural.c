@@ -1,10 +1,10 @@
-#include "main.h"
 #include <stdio.h>
 /**
- * natural - times table function
+ * main - check the code
  *
+ * Return: Always 0.
  */
-void natural()
+int main(void)
 {
 int sum, i;
 for (i = 0; i < 1024; i++)

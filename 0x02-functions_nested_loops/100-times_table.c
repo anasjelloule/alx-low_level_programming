@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 /**
  * print_times_table - times table function
  * @n: integer to return
@@ -19,7 +19,7 @@ void print_times_table(int n)
 
                 if (j == 0)
                 {
-                    putchar('0');
+                    printf("0");
                 }
                 else if (prod <= 9)
                 {
@@ -32,21 +32,3 @@ void print_times_table(int n)
                 else if (prod > 99)
                 {
                     putchar(',');
-                    putchar(' ');
-                    putchar('0' + (prod / 100));
-                    putchar('0' + ((prod / 10) % 10));
-                    putchar('0' + (prod % 10));
-                }
-                else
-                {
-                    putchar(',');
-                    putchar(' ');
-                    putchar(' ');
-                    putchar('0' + (prod / 10));
-                    putchar('0' + (prod % 10));
-                }
-            }
-            putchar('\n');
-        }
-    }
-}

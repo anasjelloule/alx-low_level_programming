@@ -15,6 +15,7 @@ for (j = 0; j < 10; j++)
 m = j * i;
 printf("%d", m);
 if (j < 9)
+{
 putchar(',');
 if (m < 10)
 {
@@ -23,6 +24,7 @@ putchar(' ');
 }
 else
 putchar(' ');
+}
 }
 putchar('\n');
 }

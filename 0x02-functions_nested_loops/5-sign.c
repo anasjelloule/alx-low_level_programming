@@ -19,7 +19,7 @@ return (-1);
 }
 if (n == 0)
 {
-printf('0');
+printf("0");
 return (0);
 }
 }

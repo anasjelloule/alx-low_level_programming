@@ -1,4 +1,11 @@
 #include "main.h"
+void print_alphabet(void)
+{
+    char a;
+    for (a = 'a'; a <= 'z'; a++)
+        _putchar(a);
+    _putchar('\n');
+}
 /**
  * print_alphabet_x10 - Print alphabet X10
  *

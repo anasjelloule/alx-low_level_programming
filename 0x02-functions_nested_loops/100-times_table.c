@@ -16,7 +16,6 @@ void print_times_table(int n)
             for (j = 0; j <= n; j++)
             {
                 int prod = j * i;
-
                 if (j == 0)
                 {
                     printf("0");
@@ -38,3 +37,15 @@ void print_times_table(int n)
                     putchar('0' + (prod % 10));
                 }
                 else
+                {
+                    printf(",");
+                    printf(" ");
+                    printf(" ");
+                    putchar('0' + (prod / 10));
+                    putchar('0' + (prod % 10));
+                }
+            }
+            putchar('\n');
+        }
+    }
+}

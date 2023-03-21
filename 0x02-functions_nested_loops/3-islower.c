@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _islower - Check if is lower case
- *
+ * @c: character to compare
  * Return: Void
  */
 int _islower(int c)

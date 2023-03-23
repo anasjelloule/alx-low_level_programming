@@ -1,0 +1,4 @@
+#ignore main.c
+main.c
+#ignore _putchar.c
+_putchar.c

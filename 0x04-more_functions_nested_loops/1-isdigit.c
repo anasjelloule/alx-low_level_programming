@@ -1,5 +1,4 @@
 #include "main.h"
-#include <ctype.h>
 /**
  * _isdigit - check the c
  *
@@ -8,5 +7,9 @@
  */
 int _isdigit(int c)
 {
-return (isdigit(c));
+char a;
+for (a = '0'; a <= '9'; a++)
+if (c == a)
+return (1);
+return (0);
 }

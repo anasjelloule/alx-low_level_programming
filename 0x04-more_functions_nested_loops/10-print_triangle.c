@@ -12,7 +12,7 @@ if (size <= 0)
 _putchar('\n');
 return;
 }
-int i, j, k = 0;
+int i, j;
 for (i = 1; i <= size; i++)
 {
 for (j = 0; j < size - i; j++)

@@ -15,6 +15,6 @@ if (a > 9)
 _putchar('1');
 _putchar(a % 10 + '0');
 }
-putchar('\n');
+_putchar('\n');
 }
 }

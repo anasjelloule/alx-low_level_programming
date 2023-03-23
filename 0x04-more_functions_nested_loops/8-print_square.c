@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_diagonal - print_diagonal
+ * print_square - print_diagonal
  *
  * @size: number of # to print
  * Return: Always 0.

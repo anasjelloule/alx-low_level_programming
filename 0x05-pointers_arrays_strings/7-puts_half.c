@@ -1,15 +1,23 @@
-#include "2-strlen.c"
 #include "main.h"
+#include "2-strlen.c"
+
 /**
- * puts_half -  Print
+ * puts_half - puts half of int
  *
- * @str: String
- * Return: Always 0.
+ * @str: string to split
  */
 void puts_half(char *str)
 {
-  int i, j = _strlen(str),k = (j / 2);
-for (i = (k + 1); i < j; i++)
-_putchar(*(str + i));
-_putchar('\n');
+	int i;
+	int oE = 0;
+
+	if (_strlen(str) % 2 != 0)
+	{
+		oE += 1;
+	}
+	for (i = (_strlen(str) + oE) / 2; i < _strlen(str); i++)
+	{
+		_putchar(str[i]);
+	}
+	_putchar('\n');
 }

@@ -11,5 +11,5 @@ void puts2(char *str)
 int i, j = _strlen(str);
 for (i = 0; i < j; i++)
 if (i % 2 == 0)
-putchar(*(str + i));
+_putchar(*(str + i));
 }

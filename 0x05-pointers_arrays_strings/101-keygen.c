@@ -7,5 +7,6 @@
  */
 int main(void)
 {
+printf("Tada! Congrats");
 return (0);
 }

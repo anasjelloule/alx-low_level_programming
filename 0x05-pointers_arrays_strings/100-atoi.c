@@ -1,46 +1,38 @@
 #include "main.h"
 #include "2-strlen.c"
-
 /**
- * _atoi - converts string to integer
- * @s: string to convert
+ * _atoi -  Convert a string
  *
- * Return: returns integer value
+ * @s: string
+ *
+ * Return: Always 0.
  */
 int _atoi(char *s)
 {
-	int i;
-	int np = 0;
-	int c;
-	int d = 1;
-	int num = 0;
-
-	for (i = 0; i < _strlen(s); i++)
-	{
-		if (!(s[i] >= '0' && s[i] <= '9') && c > 0)
-			break;
-		if (s[i] == '-')
-			np--;
-		if (s[i] == '+')
-			np++;
-		if (s[i] >= '0' && s[i] <= '9')
-		{
-			c++;
-		}
-	}
-	while (c > 0)
-	{
-		num += ((s[i - 1] - '0') * d);
-		i--;
-		c--;
-		d *= 10;
-	}
-	if (np >= 0)
-	{
-		num *= 1;
-	} else
-	{
-		num *= -1;
-	}
-	return (num);
+int cn = 1, i, j = _strlen(s), k = 0, x = 0, np = 0;
+for (i = 0; i < j; i++)
+{
+if (!(s[i] >= '0' && s[i] <= '9') && k > 0)
+break;
+if (s[i] == '-')
+np--;
+if (s[i] == '+')
+np++;
+if (s[i] >= '0' && s[i] <= '9')
+{
+k++;
+}
+}
+while (k > 0)
+{
+x += ((s[i - 1] - '0') * cn);
+i--;
+k--;
+cn *= 10;
+}
+if (np >= 0)
+x *= 1;
+else
+x *= -1;
+return (x);
 }

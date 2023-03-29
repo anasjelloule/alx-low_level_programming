@@ -8,19 +8,14 @@
  */
 char *leet(char *str)
 {
-int i;
+int i, j;
+char ck[] = {"a4A4e3E3o0O0t7T7l1L1"};
 for (i = 0; str[i] != '\0'; i++)
+for (j = 0; j < 19; j++)
+if (ck[j] == str[i])
 {
-if (str[i] == 'a' || str[i] == 'A')
-str[i] = '4';
-if (str[i] == 'e' || str[i] == 'E')
-str[i] = '3';
-if (str[i] == 'o' || str[i] == 'O')
-str[i] = '0';
-if (str[i] == 't' || str[i] == 'T')
-str[i] = '7';
-if (str[i] == 'l' || str[i] == 'L')
-str[i] = '1';
+str[i] = ck[j + 1];
+break;
 }
 return (str);
 }

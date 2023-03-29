@@ -8,7 +8,7 @@ int _checkOf(char c)
 {
 int i;
 char checkarr[13] = {'\n', '\t', ' ', '.', ',', ';', '!', '?', '(',
- ')', '{', '}'};
+')', '{', '}'};
 for (i = 0; i < 13; i++)
 if (checkarr[i] == c)
 return (1);

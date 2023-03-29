@@ -1,18 +1,19 @@
 #include "main.h"
 /**
- * _strcat -  Concat String
+ * _strncat -  Concat String
  *
  * @dest: string
  * @src: string
+ * @n: int
  * Return: Always 0.
  */
-char *_strcat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
 {
 int i, j = 0;
 for (i = 0; dest[i] != '\0'; i++)
 {
 }
-while (src[j] != '\0')
+while (src[j] != '\0' && j < n)
 {
 dest[i] = src[j];
 ++i;

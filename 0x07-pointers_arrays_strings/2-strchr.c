@@ -9,23 +9,11 @@
  */
 char *_strchr(char *s, char c)
 {
-int i, j, k = 0;
+int i;
 for (i = 0; s[i] != '\0'; i++)
 if (s[i] == c)
-{
-j = i;
-break;
-}
-for (i = 0; s[i] != '\0'; i++)
-{
-}
-char *ss = malloc(i - j);
-for (i = j; s[i] != '\0'; i++)
-ss[k++] = s[i];
-if (ss != NULL)
-{
-ss[k] = '\0';
-return (ss);
-}
-return (NULL);
+return (s + i);
+if (s[i] == c)
+return (s + i);
+return (0);
 }

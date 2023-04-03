@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
 /**
  * _strchr - search for the character c
@@ -20,11 +19,11 @@ break;
 for (i = 0; s[i] != '\0'; i++)
 {
 }
-if (j)
-{
 char *ss = malloc(i - j);
 for (i = j; s[i] != '\0'; i++)
 ss[k++] = s[i];
+if (ss != NULL)
+{
 ss[k] = '\0';
 return (ss);
 }

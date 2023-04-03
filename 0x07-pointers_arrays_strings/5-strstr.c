@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 /**
- *  _strstr- search for the character c
+ *  _strstr - search for the character c
  * @haystack: string to cop from src
  * @needle: char to copy to dest
  * Return: return string

@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *  wildcmp -
+ *  wildcmp - check two words
  * @s1: String 1
  * @s2: String 1
  * Return: O or 1

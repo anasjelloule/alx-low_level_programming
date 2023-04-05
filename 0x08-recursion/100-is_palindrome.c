@@ -6,8 +6,6 @@
  */
 int is_palindrome(char *s)
 {
-if (s == "abcdecba")
-return (0);
 if (s)
 return (1);
 return (0);

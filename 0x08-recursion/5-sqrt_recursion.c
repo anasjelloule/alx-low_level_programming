@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *  helper 2 - help recurses
+ *  helper2 - help recurses
  * @i: Number to check
  * @n: Number to check
  * Return: O or 1
@@ -20,8 +20,8 @@ return (j + 1);
 return (0);
 }
 /**
- *  is_prime_number - check if n is prime
- * @n: Number to check
+ *  _sqrt_recursion - Calcule Sqrt of n
+ * @n: Number to calculate
  * Return: O or 1
  */
 int _sqrt_recursion(int n)

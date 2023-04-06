@@ -9,9 +9,22 @@
  */
 int main(int argc, char *argv[])
 {
-if (argc < 2)
+int i, ass = 0;
+if (argc == 1)
+{
+printf("0\n");
+return (0);
+}
+for (i = 1; i < argc; i++)
+{
+if (atoi(argv[i]) == 0)
+{
 printf("Error\n");
+return (1);
+}
 else
-printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
+ass += atoi(argv[i]);
+}
+printf("%d\n", ass);
 return (0);
 }

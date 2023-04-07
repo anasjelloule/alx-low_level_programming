@@ -10,8 +10,7 @@
  */
 int main(int argc, char *argv[])
 {
-int coins = 0;
-
+int coins = 0, money = 0;
 if (argc == 2)
 {
 if (strchr(argv[argc - 1], '-'))
@@ -19,10 +18,7 @@ if (strchr(argv[argc - 1], '-'))
 printf("0\n");
 return (1);
 }
-int money;
-
 money = atoi(argv[argc - 1]);
-
 while (money > 0)
 {
 if (money % 25 == 0)

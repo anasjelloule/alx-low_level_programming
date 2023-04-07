@@ -16,6 +16,11 @@ if (argc != 2)
 printf("Error\n");
 return (1);
 }
+if (strchr(argv[argc - 1], '-'))
+{
+printf("0\n");
+return (1);
+}
 money = atoi(argv[1]);
 while (money > 0)
 if (money % 25 == 0)

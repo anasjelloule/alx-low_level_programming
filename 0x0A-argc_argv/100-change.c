@@ -10,44 +10,38 @@
  */
 int main(int argc, char *argv[])
 {
-int coins = 0, money = 0;
+int total, count;
+unsigned int i;
+char *p;
+int cents[] = {25, 10, 5, 2};
 if (argc != 2)
 {
 printf("Error\n");
 return (1);
 }
-if (strchr(argv[argc - 1], '-'))
+total = strtol(argv[1], &p, 10);
+count = 0;
+if (!*p)
 {
-printf("0\n");
+while (total > 1)
+{
+for (i = 0; i < sizeof(cents[i]); i++)
+{
+if (total >= cents[i])
+{
+count += total / cents[i];
+total = total % cents[i];
+}
+}
+}
+if (total == 1)
+count++;
+}
+else
+{
+printf("Error\n");
 return (1);
 }
-money = atoi(argv[1]);
-while (money > 0)
-if (money % 25 == 0)
-{
-money -= 25;
-coins++;
-}
-else if (money % 10 == 0)
-{
-money -= 10;
-coins++;
-}
-else if (money % 5 == 0)
-{
-money -= 5;
-coins++;
-}
-else if (money % 2 == 0)
-{
-money -= 2;
-coins++;
-}
-else if (money % 1 == 0)
-{
-money -= 1;
-coins++;
-}
-printf("%d\n", coins);
+printf("%d\n", count);
 return (0);
 }

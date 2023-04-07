@@ -27,28 +27,22 @@ return (1);
  */
 int main(int argc, char *argv[])
 {
-int i;
-int result = 0;
-if (argc > 1)
+int i, ass = 0;
+if (argc == 1)
 {
+printf("0\n");
+return (0);
+}
 for (i = 1; i < argc; i++)
 {
-if (checkstring(argv[i]))
-{
-result += atoi(argv[i]);
-}
-else
+if (!checkstring(argv[i]))
 {
 printf("Error\n");
 return (1);
 }
-}
-printf("%d\n", result);
-return (0);
-}
 else
-{
-printf("%d\n", 0);
-return (1);
+ass += atoi(argv[i]);
 }
+printf("%d\n", ass);
+return (0);
 }

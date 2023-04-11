@@ -20,8 +20,11 @@ for (i = 0; s2[i] != '\0'; i++)
 s = (char *)malloc(++size * sizeof(char));
 if (s == 0)
 return (NULL);
-for (size = 0; s1[size] != '\0'; size++)
+size = 0;
+if (s1 != NULL)
+for (; s1[size] != '\0'; size++)
 s[size] = s1[size];
+if (s2 != NULL)
 for (i = 0; s2[i] != '\0'; i++)
 s[size++] = s2[i];
 s[size] = '\0';

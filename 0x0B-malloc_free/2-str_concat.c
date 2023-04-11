@@ -17,7 +17,9 @@ for (size = 0; s1[size] != '\0'; size++)
 for (i = 0; s2[i] != '\0'; i++)
 {size++;
 }
-s = (char *)malloc(size * sizeof(char));
+s = (char *)malloc(++size * sizeof(char));
+if (s == 0)
+return (NULL);
 for (size = 0; s1[size] != '\0'; size++)
 s[size] = s1[size];
 for (i = 0; s2[i] != '\0'; i++)

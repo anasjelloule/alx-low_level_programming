@@ -14,7 +14,8 @@ int i, j = size == 0 ? 0 : size;
 if (size == 0)
 return (NULL);
 array = (char *)malloc(size * sizeof(char));
-*array = c;
+if (array == 0)
+return (NULL);
 for (i = 0; i < j; i++)
 array[i] = c;
 return (array);

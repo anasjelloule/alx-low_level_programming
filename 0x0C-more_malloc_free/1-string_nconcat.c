@@ -35,3 +35,4 @@ for (i = 0; i < n2; i++)
 s[size1++] = s2[i];
 s[size1] = '\0';
 return (s);
+}

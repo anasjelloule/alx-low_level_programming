@@ -10,14 +10,10 @@
 int *array_range(int min, int max)
 {
 int *check;
-int i, j;
-
+int i;
 if (min > max)
 return (NULL);
-j = 0;
-for (i = min; i <= max; i++)
-j++;
-check = (int *)malloc(j * sizeof(int));
+check = (int *)malloc((max - min + 1) * sizeof(int));
 if (check == NULL)
 return (NULL);
 i = 0;

@@ -23,7 +23,7 @@ for (i = 0; s2[i] != '\0'; i++)
 {
 size2++;
 }
-if (size2 >= n2)
+if (size2 <= n2)
 size2 = n2;
 s = (char *)malloc(size1 + size2 + 1 * sizeof(char));
 if (s == 0)

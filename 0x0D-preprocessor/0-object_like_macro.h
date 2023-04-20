@@ -1,3 +1,3 @@
-#ifndef min
-#define min(X, Y)  ((X) < (Y) ? (X) : (Y))
+#ifndef SIZE
+#define SIZE 1024
 #endif

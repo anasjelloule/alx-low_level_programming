@@ -20,5 +20,5 @@ va_start(lst, n);
 for (i = 0; i < n; ++i)
 result += va_arg(lst, int);
 va_end(lst);
-return result;
+return (result);
 }

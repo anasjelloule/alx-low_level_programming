@@ -3,7 +3,7 @@
 #include <stdarg.h>
 #include "variadic_functions.h"
 /**
- * int print_numbers - Prints all the elements
+ * print_numbers - Prints all the elements
  * @separator:ceprator
  * @n:numbers
  *

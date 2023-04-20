@@ -19,7 +19,7 @@ for (i = 0; i < n; i++)
 {
 if (i > 0 && separator != NULL)
 printf("%s", separator);
-printf("%d", va_arg(lst, int));
+printf("%s", va_arg(lst, char *));
 }
 printf("\n");
 va_end(lst);

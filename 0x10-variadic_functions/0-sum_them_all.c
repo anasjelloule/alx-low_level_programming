@@ -3,12 +3,10 @@
 #include <stdarg.h>
 #include "variadic_functions.h"
 /**
- * int sum_them_all - sum all the elements
- -  executes a function
-* @n: size of the elements
-*
-* Return: Nothing.
-*/
+ * sum_them_all - sum all args
+ * @n: integers to sum
+ * Return: sum
+ */
 int sum_them_all(const unsigned int n, ...)
 {
 int result = 0;

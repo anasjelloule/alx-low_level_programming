@@ -12,6 +12,8 @@ int c = 0;
 while (str[c])
 c++;
 new = malloc(sizeof(list_t));
+if (new == NULL)
+return (NULL);
 new->str = strdup(str);
 new->len = c;
 new->next = NULL;

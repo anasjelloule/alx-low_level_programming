@@ -21,7 +21,7 @@ if (*head == NULL)
 return (new);
 }
 else
-{ 
+{
 h = *head;
 while (h->next != NULL)
 h = h->next;

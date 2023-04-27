@@ -15,6 +15,11 @@ new = malloc(sizeof(list_t));
 new->str = strdup(str);
 new->len = c;
 new->next = NULL;
+if (strdup(str) == NULL)
+{
+free(new);
+return (NULL);
+}
 if (*head == NULL)
 {
 *head = new;

@@ -1,3 +1,5 @@
+#ifndef LISTS_H
+#define LISTS_H
 #include <stddef.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -23,3 +25,4 @@ void free_listint2(listint_t **head);
 int sum_listint(listint_t *head);
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index);
 int _putchar(char c);
+#endif

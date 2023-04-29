@@ -2,7 +2,6 @@
 /**
  * free_listint -   frees listint_t
  * @head: pointer to listint_t structure
- * @n: Element to add to NodeList
  * Return: the number of nodes
  */
 void free_listint(listint_t *head)

@@ -6,20 +6,21 @@
  */
 size_t print_listint_safe(const listint_t *head)
 {
-size_t c = 0;
+size_t c;
 listint_t *anas = (listint_t *)head;
-if (head == NULL)
-exit(98);
-while (anas != NULL)
+c = 0;
+
+while (anas && anas > anas->next)
 {
-c++;
 printf("[%p] %d\n", (void *)anas, anas->n);
 anas = anas->next;
-if (anas >= head && anas != NULL)
-{
-printf("-> [%p] %d\n", (void *)anas->next, anas->next->n);
-exit(98);
+c++;
 }
+if (anas)
+{
+printf("[%p] %d\n", (void *)anas, anas->n);
+printf("-> [%p] %d\n", (void *)anas->next, anas->next->n);
+c++;
 }
 return (c);
 }

@@ -12,7 +12,6 @@ anas = malloc(sizeof(listint_t));
 if (!head || !*head)
 return (0);
 vl = (*head)->n;
-printf("%d", vl);
 anas = (*head)->next;
 free(*head);
 *head = anas;

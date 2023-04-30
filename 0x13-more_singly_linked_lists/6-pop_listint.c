@@ -7,10 +7,14 @@
 int pop_listint(listint_t **head)
 {
 listint_t *anas;
+int vl = 0;
 anas = malloc(sizeof(listint_t));
-if (anas == NULL || head == NULL || *head == NULL)
+if (!head || !*head)
 return (0);
-anas = *head;
-*head = anas->next;
-return (anas->n);
+vl = (*head)->n;
+printf("%d", vl);
+anas = (*head)->next;
+free(*head);
+*head = anas;
+return (vl);
 }

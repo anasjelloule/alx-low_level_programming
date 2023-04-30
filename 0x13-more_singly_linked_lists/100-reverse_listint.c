@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * print_listint_safe -  Print all linked list
+ * reverse_listint -  Reverse linked list
  * @head: pointer to listint_t structure
  * Return: the number of nodes
  */

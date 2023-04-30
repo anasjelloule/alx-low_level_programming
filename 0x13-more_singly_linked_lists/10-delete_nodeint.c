@@ -2,7 +2,7 @@
 /**
  * delete_nodeint_at_index -  remove the head of listint_t linked list
  * @head: pointer to listint_t structure
- * @idx: index of node to remove
+ * @index: index of node to remove
  * Return: the number of nodes
  */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)

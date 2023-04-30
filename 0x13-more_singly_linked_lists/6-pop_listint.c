@@ -8,7 +8,6 @@ int pop_listint(listint_t **head)
 {
 listint_t *anas;
 int vl = 0;
-anas = malloc(sizeof(listint_t));
 if (!head || !*head)
 return (0);
 vl = (*head)->n;

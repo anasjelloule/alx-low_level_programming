@@ -15,7 +15,7 @@ if (anas == NULL)
 return (NULL);
 anas->n = n;
 anas->next = NULL;
-if (*head == NULL)
+if (*head == NULL && idx == 0)
 {
 *head = anas;
 return (anas);

@@ -39,6 +39,7 @@ if (++c == idx)
 {
 anas->next = h->next;
 h->next = anas;
+return (anas);
 }
 }
 return (NULL);

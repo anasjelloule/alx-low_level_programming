@@ -7,7 +7,6 @@
 int pop_listint(listint_t **head)
 {
 listint_t *anas;
-unsigned int c = 0;
 anas = malloc(sizeof(listint_t));
 if (anas == NULL || head == NULL || *head == NULL)
 return (0);

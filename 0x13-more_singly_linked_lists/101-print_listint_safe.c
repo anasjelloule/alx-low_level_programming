@@ -9,8 +9,6 @@ size_t print_listint_safe(const listint_t *head)
 size_t c;
 listint_t *anas = (listint_t *)head;
 c = 0;
-if (head == NULL)
-exit(98);
 while (anas && anas > anas->next)
 {
 printf("[%p] %d\n", (void *)anas, anas->n);
@@ -22,6 +20,7 @@ if (anas)
 printf("[%p] %d\n", (void *)anas, anas->n);
 printf("-> [%p] %d\n", (void *)anas->next, anas->next->n);
 c++;
+exit(98);
 }
 return (c);
 }

@@ -7,15 +7,13 @@
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
-listint_t *h;
-int anas = 0;
-h = head;
-while (h != NULL)
+unsigned int anas = 0;
+while (head)
 {
-if (anas == (int)index)
-return h;
+if (anas == index)
+return (head);
 anas++;
-h = h->next;
+head = head->next;
 }
 return (NULL);
 }

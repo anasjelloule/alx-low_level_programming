@@ -1,3 +1,4 @@
+#include "lists.h"
 /**
 * find_listint_loop - Find List Loop
 * @head: pointer to listint_t structure
@@ -5,5 +6,6 @@
 */
 listint_t *find_listint_loop(listint_t *head)
 {
-return (head);
+listint_t *anas = head;
+return (anas);
 }

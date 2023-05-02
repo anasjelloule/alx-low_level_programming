@@ -7,16 +7,24 @@ void frr(listint_t *anas);
  */
 size_t free_listint_safe(listint_t **h)
 {
+listint_t *anas = NULL;
 size_t c = 0;
-listint_t *anas;
-
-anas = *h;
-while (anas)
+if (!(h && *h))
+return (c);
+while (*h)
+{
+c++;
+if (*h > (*h)->next)
 {
 anas = *h;
-anas = anas->next;
-frr(anas);
-c++;
+*h = (*h)->next;
+free(anas);
+}
+else
+{
+free(*h);
+*h = NULL;
+}
 }
 *h = NULL;
 return (c);

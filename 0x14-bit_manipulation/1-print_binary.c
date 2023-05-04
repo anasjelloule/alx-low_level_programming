@@ -12,5 +12,5 @@ int anas = (int)n;
 if (anas > 1)
 print_binary(n >> 1);
 
-printf("%d", anas & 1);
+_putchar((anas & 1) + '0');
 }

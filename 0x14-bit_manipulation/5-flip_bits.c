@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *  unsigned -  sets the value of a bit to 0 at a given index
+ *  flip_bits -  Flip
  * @n: Number
  * @ù:  to set the value at indices start at 0.
  * Return: integer

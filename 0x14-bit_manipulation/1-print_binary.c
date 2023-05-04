@@ -8,9 +8,8 @@
  */
 void print_binary(unsigned long int n)
 {
-int anas = (int)n;
-if (anas > 1)
+if (n > 1)
 print_binary(n >> 1);
 
-_putchar((anas & 1) + '0');
+_putchar((n & 1) + '0');
 }

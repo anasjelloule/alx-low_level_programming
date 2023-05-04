@@ -2,7 +2,7 @@
 /**
  *  flip_bits -  Flip
  * @n: Number
- * @ù:  to set the value at indices start at 0.
+ * @m:  Number
  * Return: integer
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)

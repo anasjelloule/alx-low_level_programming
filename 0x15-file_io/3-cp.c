@@ -9,11 +9,9 @@
 #include "main.h"
 char *cr_bffr(char *fls);
 void cs_fl(int f_d_);
-
 /**
- *  cr_bffr -
+ *  cr_bffr - create buffer ....
  * @fls: char *
- * @text_content: char*
  * Return: int
  */
 char *cr_bffr(char *fls)
@@ -28,7 +26,7 @@ exit(99);
 return (bffr);
 }
 /**
- *  cs_fl -
+ *  cs_fl - close File ......
  * @f_d_: char *
  * Return: int
  */
@@ -43,15 +41,15 @@ exit(100);
 }
 }
 /**
- * main - check the code
- *
- * Return: Always 0.
- */
+* main - check the code
+* @argc: The number of arguments supplied to the program.
+* @argv: An array of pointers to the arguments.
+* Return: Always 0.
+*/
 int main(int argc, char *argv[])
 {
 int frm, dist, anas, rrd;
 char *bffr;
-
 if (argc != 3)
 {
 dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
@@ -63,8 +61,7 @@ frm = open(argv[1], O_RDONLY);
 rrd = read(frm, bffr, 1024);
 dist = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 
-do
-{
+do {
 if (frm == -1 || rrd == -1)
 {
 dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);

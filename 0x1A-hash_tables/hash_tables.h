@@ -3,6 +3,9 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
+
+unsigned long int key_index(const unsigned char *key, unsigned long int size);
+
 /**
  * struct hash_node_s - Node of a hash table
  *

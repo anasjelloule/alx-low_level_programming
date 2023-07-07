@@ -6,7 +6,7 @@
 #include "hash_tables.h"
 
 /**
- * hash_djb - djb2 algorithm.
+ * hash_djb2 - djb2 algorithm.
  * @str:  string for  hashing.
  *
  * Return: hash calculated

@@ -37,6 +37,7 @@ hash_node_t **array;
 } hash_table_t;
 
 unsigned long int hash_djb2(const unsigned char *str);
+void hash_table_print(const hash_table_t *ht);
 char *hash_table_get(const hash_table_t *ht, const char *key);
 int hash_table_set(hash_table_t *ht, const char *key, const char *value);
 hash_table_t *hash_table_create(unsigned long int size);

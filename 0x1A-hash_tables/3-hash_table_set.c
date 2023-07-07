@@ -6,13 +6,14 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_set - set key val 
+ * hash_table_set - set key val
  * @ht: pointer hash table
  * @key: key should not be empty
  * @value: val
  *
  * Return: 0 | 1
  */
+
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	hash_node_t *nw;

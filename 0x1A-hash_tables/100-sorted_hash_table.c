@@ -15,8 +15,7 @@ void shash_table_delete(shash_table_t *ht);
 /**
  * shash_table_create - Creact a new sorted hash table
  * @size: hash table size
- *
- * Return: 
+ * Return: hashed
  */
 shash_table_t *shash_table_create(unsigned long int size)
 {
@@ -121,7 +120,6 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 	return (1);
 }
 
-
 /**
  * shash_table_get - get a shash table by key
  * @ht: A sorted hash table.
@@ -196,7 +194,7 @@ void shash_table_print_rev(const shash_table_t *ht)
 
 /**
  * shash_table_delete - remove a hash table key
- * @ht: hash table handle  
+ * @ht: hash table handle
  */
 void shash_table_delete(shash_table_t *ht)
 {
